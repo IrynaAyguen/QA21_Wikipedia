@@ -40,7 +40,7 @@ public class HelperBase {
 
         TouchAction action = new TouchAction(driver);
         Dimension size = driver.manage().window().getSize();
-        int y = (int) (size.height/1.67);
+        int y = size.height/2;
         int startX = (int) (size.width*0.8);
         int stopX = (int) (size.width*0.2);
 

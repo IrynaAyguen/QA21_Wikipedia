@@ -13,7 +13,7 @@ public class SmokyWikipediaTest extends TestBase{
         app.getArticle().createReadingList();
         app.getArticle().close();
         app.getArticle().goToFavorites();
-        Thread.sleep(2000);
-        app.getArticle().moveElementRightToLeft();
+        Thread.sleep(5000);
+        app.getArticle().removeArticleFromFavoritesRightToLeft();
     }
 }
