@@ -1,5 +1,6 @@
 package com.telran.wiki.tests;
 
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
 public class SmokyWikipediaTest extends TestBase{
@@ -14,6 +15,7 @@ public class SmokyWikipediaTest extends TestBase{
         app.getArticle().close();
         app.getArticle().goToFavorites();
         Thread.sleep(5000);
-        app.getArticle().removeArticleFromFavoritesRightToLeft();
+        //app.getArticle().removeArticleFromFavorites();
+        app.getArticle().swipeToLeft(By.id("org.wikipedia:id/page_list_item_container"));
     }
 }
